@@ -116,6 +116,7 @@ class JokesApiTest {
       log.info("Text file with a new joke successfully created: {}", path);
     } catch (IOException e) {
       log.error("Can't write joke to a file: ", e);
+      throw new RuntimeException(e);
     }
   }
 }
