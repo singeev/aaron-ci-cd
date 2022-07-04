@@ -4,7 +4,7 @@ jobs:
   test-and-build:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout
+      - uses: action/checkout@v3
       - name: compile
         run: mvn clean compile
       - name: test
