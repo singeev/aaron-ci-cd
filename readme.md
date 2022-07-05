@@ -22,9 +22,21 @@ Main project's goal is to run tests.
 
 The project based on a basic maven archetype for a plain java application.
 
-### How to run
+### Build the project
 
-After cloning the repository just run the command:
+Since it's maven project, run this command to build it:
+> mvn clean package
+
+This command will
+
+* download all needed dependencies
+* compile all classes
+* run tests
+* build the `*.jar` artifact
+
+### How to run tests
+
+Apart from build the project (see above) you can just run tests separately:
 > mvn test
 
 This command will run all existing tests with *maven-surefire* plugin.
